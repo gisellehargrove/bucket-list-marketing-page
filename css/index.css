@@ -1,3 +1,14 @@
+.page-content .mdl-card {
+  position: absolute;
+}
+.page-content .card-1 {
+  top: 120px;
+  left: 75px;
+}
+.page-content .card-2 {
+  top: 120px;
+  right: 75px;
+}
 .page-content .img-container {
   display: flex;
 }
