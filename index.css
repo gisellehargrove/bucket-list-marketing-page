@@ -1,4 +1,4 @@
-/*  */
-h1 {
-  font-family: 'Courgette', cursive;
+.img-container img {
+  border-radius: 150px;
+  height: 150px;
 }

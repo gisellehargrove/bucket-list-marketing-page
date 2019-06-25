@@ -1,0 +1,14 @@
+.page-content .img-container {
+  display: flex;
+}
+.page-content .img-container img {
+  margin: 20px auto;
+  border-radius: 500px;
+  height: 500px;
+}
+.page-content .login-button-container {
+  display: flex;
+}
+.page-content .login-button-container .mdl-button {
+  margin: 20px auto;
+}

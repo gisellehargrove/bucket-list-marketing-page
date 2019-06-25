@@ -5,27 +5,53 @@
 
     <title>Bucket List</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-red.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
-    <h1>Bucket List!</h1>
-
-    <img src="./images/bucket.png" alt="">
-
-    <button
-      class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-      onclick="window.location.href = 'https://bucketlistfe.netlify.com/'">
-      Log In Now
-    </button>
+    <!-- <h1>Bucket List!</h1> -->
 
 
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Bucket List</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">About the Team</a>
+            <a class="mdl-navigation__link" href="">Contact Us</a>
+          </nav>
+        </div>
+      </header>
 
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="img-container">
+            <img src="./images/bucket.png" alt="">
+          </div>
+
+          <div class="login-button-container">
+            <button
+              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+              onclick="window.location.href='https://bucketlistfe.netlify.com/'">
+              Log In Now
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
 
 
     <script src="./index.js"></script>
     <script src="./bower_components/material-design-lite/material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
   </body>
 </html>
