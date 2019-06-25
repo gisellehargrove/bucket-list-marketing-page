@@ -2,7 +2,8 @@
   font-family: "Courgette", cursive;
 }
 .page-content {
-  margin-top: 100px;
+  height: 100%;
+  background: url('../images/bloom.jpg') center / cover;
 }
 .page-content .page-title-container {
   display: flex;
