@@ -34,6 +34,6 @@ TweenMax.from(
   0.5,
   {
     x: 700,
-    delay: 5
+    delay: 4
   }
 )
