@@ -31,7 +31,6 @@
   left: 75px;
 }
 .page-content .card-1 .mdl-card__title {
-  opacity: 0.75;
   background: url('../images/adventure-clouds.jpg') center / cover;
 }
 .page-content .card-2 {
@@ -39,7 +38,6 @@
   right: 75px;
 }
 .page-content .card-2 .mdl-card__title {
-  opacity: 0.75;
   background: url('../images/adventure-flares.jpg') center / cover;
 }
 .page-content .img-container {
