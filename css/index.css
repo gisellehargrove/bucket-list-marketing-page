@@ -4,7 +4,7 @@
 .page-content .img-container img {
   margin: 20px auto;
   border-radius: 500px;
-  height: 500px;
+  height: 350px;
 }
 .page-content .login-button-container {
   display: flex;
