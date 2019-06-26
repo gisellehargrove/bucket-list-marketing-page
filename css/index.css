@@ -12,6 +12,7 @@
   height: 800px;
   width: auto;
   background-color: #E3E4E6;
+  background: url('../images/background-notebook.jpg') center / cover;
 }
 .page-content .intro-section .page-title-container {
   display: flex;
@@ -65,7 +66,6 @@
   background: url('../images/adventure-flares.jpg') center / cover;
 }
 .page-content .img-container {
-  background-repeat: no-repeat;
   display: flex;
 }
 .page-content .img-container img {
