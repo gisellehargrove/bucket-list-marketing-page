@@ -4,7 +4,7 @@ $(document).ready(() => {
   // Not working
   $('#scroll').click(function(){
     console.log('clicked')
-      $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+      $('html, body').animate({scrollTop:$(document).height() + 50}, 'slow');
       return false;
   });
 
