@@ -1,4 +1,17 @@
 $(document).ready(() => {
+
+
+  // Not working
+  $('#scroll').click(function(){
+    console.log('clicked')
+      $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+      return false;
+  });
+
+
+
+
+  /***********  ANIMATIONS  ***********/
   // Give the logo image a nice animation on load of the page using GSAP
   TweenMax.from(
     '.logo-img',
@@ -26,27 +39,44 @@ $(document).ready(() => {
     1,
     {
       opacity: 1,
-      delay: 2
+      delay: 3
     }
-  )
+  );
+
+  const featureCards = $('.mdl-card');
+
+  let time = 0.5;
+
+  featureCards.each((index, card) => {
+
+    TweenMax.from(
+      card,
+      time,
+      {
+        x: -1500,
+        delay: 2
+      }
+    )
+    time += 0.25;
+  });
 
   // Animate the cards into the page
   // Left side info card
-  TweenMax.from(
-    '.card-1',
-    0.5,
-    {
-      x: -700,
-      delay: 3
-    }
-  )
-  // Animate the right side info card
-  TweenMax.from(
-    '.card-2',
-    0.5,
-    {
-      x: 700,
-      delay: 4
-    }
-  )
+//   TweenMax.from(
+//     '.card-1',
+//     0.5,
+//     {
+//       x: -700,
+//       delay: 3
+//     }
+//   )
+//   // Animate the right side info card
+//   TweenMax.from(
+//     '.card-2',
+//     0.5,
+//     {
+//       x: 700,
+//       delay: 4
+//     }
+//   )
 });
