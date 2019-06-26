@@ -56,7 +56,7 @@ $(document).ready(() => {
       time,
       {
         x: -1500,
-        delay: 8
+        delay: 4
       }
     )
     time += 0.25;

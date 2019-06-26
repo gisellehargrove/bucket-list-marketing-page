@@ -73,10 +73,11 @@
   height: 450px;
 }
 .page-content .login-button-container {
-  display: flex;
+  height: 100px;
+  width: 100%;
 }
 .page-content .login-button-container .mdl-button {
-  margin: 20px auto;
+  margin: 20px 45%;
 }
 .mission-statement-container {
   font-family: "Courgette", cursive;
