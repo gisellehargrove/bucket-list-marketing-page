@@ -5,8 +5,8 @@ $(document).ready(() => {
   $('#scroll').click(function(){
     let top = $(this).offset().top + 75;
       $('html, body').animate({
-        scrollTop: top
-      }, 'smooth');
+        scrollTop: $(document).height()
+      }, 1000);
       return false;
   });
 
