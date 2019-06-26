@@ -45,6 +45,11 @@
   height: 350px;
   margin: 25px;
 }
+.page-content .features-container .mdl-card .mdl-card__supporting-text {
+  font-size: 1.5rem;
+  line-height: 35px;
+  text-align: center;
+}
 .page-content .features-container .mdl-card .mdl-card__title {
   height: 175px;
 }
