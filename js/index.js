@@ -3,9 +3,10 @@ $(document).ready(() => {
 
   // Not working
   $('#scroll').click(function(){
+    let top = $(this).offset().top + 75;
       $('html, body').animate({
-        scrollTop: $(this).offset().top
-        }, 'slow');
+        scrollTop: top
+      }, 'smooth');
       return false;
   });
 
