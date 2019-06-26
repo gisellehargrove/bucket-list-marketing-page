@@ -45,7 +45,7 @@ $(document).ready(() => {
 
   const featureCards = $('.mdl-card');
 
-  let time = 0.5;
+  let time = 1;
 
   featureCards.each((index, card) => {
 
