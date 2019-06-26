@@ -7,15 +7,25 @@ $(document).ready(() => {
       rotation: 360,
       y: -500,
       ease: Bounce.easeOut,
-      delay: 1
+      delay: 1,
+      opacity: 0
     }
   );
 
-  TweenMax.from(
+  // TweenMax.from(
+  //   '.page-title',
+  //   0.5,
+  //   {
+  //     opacity: 0,
+  //     delay: 2
+  //   }
+  // )
+
+  TweenMax.to(
     '.page-title',
-    0.5,
+    1,
     {
-      opacity: 0,
+      opacity: 1,
       delay: 2
     }
   )
