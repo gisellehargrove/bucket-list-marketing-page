@@ -1,3 +1,6 @@
+.mdl-layout__header-row .mdl-navigation__link {
+  color: #C14953;
+}
 .mdl-layout__header a {
   font-family: "Courgette", cursive;
 }
@@ -75,12 +78,26 @@
   width: 100%;
   padding: 10px;
   display: flex;
+  margin-bottom: 35px;
+}
+@media (max-width: 800px) {
+  .mission-statement-container {
+    height: 100px;
+    margin-bottom: 60px;
+  }
 }
 .mission-statement-container .mission-statement {
   margin: 0 auto;
   padding: 50px;
   font-size: 1.5rem;
   line-height: 40px;
+  color: #C14953;
+}
+@media (max-width: 800px) {
+  .mission-statement-container .mission-statement {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
 }
 .about-us-container {
   display: flex;
@@ -92,7 +109,7 @@
 .about-us-container .mdl-card {
   margin: 15px;
   width: 320px;
-  height: 320px;
+  height: 500px;
 }
 .about-us-container .mdl-card .mdl-card__title-kelli {
   color: #fff;
