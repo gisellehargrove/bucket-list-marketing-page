@@ -9,7 +9,7 @@
 }
 .page-content .intro-section {
   position: relative;
-  height: 800px;
+  height: 700px;
   width: auto;
   background-color: #E3E4E6;
   background: url('../images/background-notebook.jpg') center / cover;
@@ -31,7 +31,6 @@
   bottom: -25px;
 }
 .page-content .features-container {
-  background: url('../images/bloom.jpg') center / cover;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -141,6 +140,10 @@
 }
 .contact-page {
   display: flex;
+  background: url('../images/activity-background.jpg') center / cover;
+}
+.contact-page form {
+  font-weight: 700;
 }
 .contact-page .form-container {
   display: flex;
