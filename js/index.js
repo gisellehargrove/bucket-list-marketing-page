@@ -3,8 +3,9 @@ $(document).ready(() => {
 
   // Not working
   $('#scroll').click(function(){
-    console.log('clicked')
-      $('html, body').animate({scrollTop:$(document).height() + 50}, 'slow');
+      $('html, body').animate({
+        scrollTop: $(this).offset().top
+        }, 'slow');
       return false;
   });
 
