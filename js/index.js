@@ -8,25 +8,29 @@ $(document).ready(() => {
     return false;
   });
 
-  $('.send-button').click(() => {
-    const firstName = $('#name').val();
-    const email = $('#email').val();
-    const message = $('#message').val();
-
-    $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
-      method: 'POST',
-      data: JSON.stringify({
-        firstname: firstName,
-        lastname: '',
-        email: email,
-      }),
-      error: (error) => {
-        console.log(error, 'error');
-      },
-      success: (obj) => {
-        console.log(obj);
-      }
-    })
+  $('.send-button').click((e) => {
+    e.preventDefault();
+    let firstName = $('#name').val();
+    let email = $('#email').val();
+    let message = $('#message').val();
+    console.log(firstName, email, message);
+    $.ajax('https://bucket-list-be.herokuapp.com/api/contacts').then((data, error) => {
+      console.log(data, 'data');
+      console.log(error, 'error');
+    });
+    // $.ajax('https://bucket-list-be.herokuapp.com/api/contacts/47/messages', {
+    //   method: 'POST',
+    //   data: {
+    //     contact_id: 47,
+    //     message: 'test message'
+    //   },
+    //   error: (error) => {
+    //     console.log(error, 'error');
+    //   },
+    //   success: (obj) => {
+    //     console.log(obj);
+    //   }
+    // })
   });
 
 
