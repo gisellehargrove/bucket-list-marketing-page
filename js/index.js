@@ -9,6 +9,28 @@ $(document).ready(() => {
       return false;
   });
 
+  // sendButton.click((e) => {
+  //   e.preventDefault();
+  //   console.log('send');
+  // });
+
+  $('.send-button').click(() => {
+    $.ajax({
+      url: 'https://bucket-list-be.herokuapp.com/api/contacts',
+      method: 'POST',
+      data: {
+        firstname: 'Giselle',
+        lastname: 'Hargrove',
+        email: 'gisellehargrove@gmail.com'
+      },
+      error: (error) => {
+        console.log(error, 'error')
+      }
+    }).done((id) => {
+      console.log(id, 'id from server');
+    })
+  });
+
 
   /***********  ANIMATIONS  ***********/
   // Give the logo image a nice animation on load of the page using GSAP

@@ -115,9 +115,10 @@
 }
 .contact-page {
   display: flex;
-  background: url('../images/activity-background.jpg') center / cover;
 }
 .contact-page form {
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
 }
 .contact-page .form-container {
@@ -126,6 +127,9 @@
 }
 .contact-page .form-container .message-input {
   display: block;
+  margin: 0 auto;
+}
+.contact-page .send-button {
   margin: 0 auto;
 }
 .mission-statement-container {
