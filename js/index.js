@@ -1,15 +1,14 @@
 $(document).ready(() => {
 
   // Scroll button
-  $('#scroll').click(function(){
-      $('html, body').animate({
-        scrollTop: $('#log-in-button').scrollTop()
-      }, 1000);
-      return false;
+  $('#scroll').click(() => {
+    $('html, body').animate({
+      scrollTop: $('#log-in-button').scrollTop()
+    }, 1000);
+    return false;
   });
 
   $('.send-button').click(() => {
-
     $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
       method: 'POST',
       data: {
