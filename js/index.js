@@ -4,30 +4,23 @@ $(document).ready(() => {
   $('#scroll').click(function(){
     let top = $(this).offset().top;
       $('html, body').animate({
-        scrollTop: $(document).height()
+        scrollTop: top
       }, 1000);
       return false;
   });
 
-  // sendButton.click((e) => {
-  //   e.preventDefault();
-  //   console.log('send');
-  // });
-
   $('.send-button').click(() => {
-    $.ajax({
-      url: 'https://bucket-list-be.herokuapp.com/api/contacts',
+
+    $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
       method: 'POST',
       data: {
         firstname: 'Giselle',
         lastname: 'Hargrove',
-        email: 'gisellehargrove@gmail.com'
+        email: 'gisellehargrove@gmail.com',
       },
       error: (error) => {
-        console.log(error, 'error')
+        console.log(error);
       }
-    }).done((id) => {
-      console.log(id, 'id from server');
     })
   });
 
