@@ -11,14 +11,16 @@ $(document).ready(() => {
   $('.send-button').click(() => {
     $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
       method: 'POST',
-      data: {
+      data: JSON.stringify({
         firstname: 'Giselle',
         lastname: 'Hargrove',
         email: 'gisellehargrove@gmail.com',
-      },
+      }),
       error: (error) => {
-        console.log(error);
+        console.log(error, 'error');
       }
+    }).done((user) => {
+      console.log(user);
     })
   });
 
