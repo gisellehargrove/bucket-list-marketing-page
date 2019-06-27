@@ -9,12 +9,16 @@ $(document).ready(() => {
   });
 
   $('.send-button').click(() => {
+    const firstName = $('#name').val();
+    const email = $('#email').val();
+    const message = $('#message').val();
+
     $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
       method: 'POST',
       data: JSON.stringify({
-        firstname: 'Giselle',
-        lastname: 'Hargrove',
-        email: 'gisellehargrove@gmail.com',
+        firstname: firstName,
+        lastname: '',
+        email: email,
       }),
       error: (error) => {
         console.log(error, 'error');
