@@ -19,7 +19,7 @@
   padding-top: 100px;
 }
 .page-content .intro-section .page-title-container .page-title {
-  opacity: 0;
+  opacity: 1;
   margin: 0 auto;
   font-size: 7rem;
   font-family: "Courgette", cursive;
