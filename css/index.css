@@ -1,6 +1,14 @@
 .mdl-layout__header-row .mdl-navigation__link {
   color: #C14953;
 }
+.mdl-layout__header .logo-header-img {
+  height: 70px;
+}
+@media (max-width: 800px) {
+  .mdl-layout__header .logo-header-img {
+    margin-left: 35%;
+  }
+}
 .mdl-layout__header a {
   font-family: "Courgette", cursive;
 }
@@ -54,9 +62,6 @@
   height: 175px;
 }
 @media (max-width: 800px) {
-  .page-content .features-container .mdl-card {
-    display: none;
-  }
 }
 .page-content .features-container .card-1 .mdl-card__title {
   background: url('../images/adventure-clouds.jpg') center / cover;

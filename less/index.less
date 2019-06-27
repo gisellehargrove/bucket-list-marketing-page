@@ -1,13 +1,21 @@
 @import "./variables.less";
 @import "./home.less";
 @import "./contact.less";
-@import "./about-us.less"
+@import "./about-us.less";
 
 .mdl-layout__header-row .mdl-navigation__link {
   color: #C14953;
 }
 
 .mdl-layout__header {
+  .logo-header-img {
+    height: 70px;
+
+    @media @mobile {
+      margin-left: 35%;
+    }
+  }
+
   a {
     font-family: "Courgette", cursive;
   }
@@ -75,7 +83,7 @@
       }
 
       @media @mobile {
-        display: none;
+        // display: none;
       }
     }
 
