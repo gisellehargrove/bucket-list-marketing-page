@@ -4,7 +4,7 @@ $(document).ready(() => {
   $('#scroll').click(() => {
     $('html, body').animate({
       scrollTop: $('#log-in-button').scrollTop()
-    }, 1000);
+    }, 100);
     return false;
   });
 
