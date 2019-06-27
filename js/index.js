@@ -1,9 +1,8 @@
 $(document).ready(() => {
-
-
+  
   // Scroll button
   $('#scroll').click(function(){
-    let top = $(this).offset().top + 75;
+    let top = $(this).offset().top;
       $('html, body').animate({
         scrollTop: $(document).height()
       }, 1000);
