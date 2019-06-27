@@ -2,9 +2,8 @@ $(document).ready(() => {
 
   // Scroll button
   $('#scroll').click(function(){
-    let top = $(this).offset().top;
       $('html, body').animate({
-        scrollTop: top
+        scrollTop: $('#log-in-button').scrollTop()
       }, 1000);
       return false;
   });
