@@ -22,9 +22,10 @@ $(document).ready(() => {
       }),
       error: (error) => {
         console.log(error, 'error');
+      },
+      success: (obj) => {
+        console.log(obj);
       }
-    }).done((user) => {
-      console.log(user);
     })
   });
 
