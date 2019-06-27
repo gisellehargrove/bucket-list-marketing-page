@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  
+
   // Scroll button
   $('#scroll').click(function(){
     let top = $(this).offset().top;
@@ -42,7 +42,7 @@ $(document).ready(() => {
       time,
       {
         x: -1500,
-        delay: 4,
+        delay: 1,
         transform: 1.2
       }
     )

@@ -1,17 +1,3 @@
-.mdl-layout__header-row .mdl-navigation__link {
-  color: #C14953;
-}
-.mdl-layout__header .logo-header-img {
-  height: 70px;
-}
-@media (max-width: 800px) {
-  .mdl-layout__header .logo-header-img {
-    margin-left: 35%;
-  }
-}
-.mdl-layout__header a {
-  font-family: "Courgette", cursive;
-}
 .page-content {
   height: 100%;
 }
@@ -127,6 +113,21 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+.contact-page {
+  display: flex;
+  background: url('../images/activity-background.jpg') center / cover;
+}
+.contact-page form {
+  font-weight: 700;
+}
+.contact-page .form-container {
+  display: flex;
+  margin: 50px auto;
+}
+.contact-page .form-container .message-input {
+  display: block;
+  margin: 0 auto;
+}
 .mission-statement-container {
   font-family: "Courgette", cursive;
   height: 200px;
@@ -187,18 +188,17 @@
 .about-us-container .mdl-card .mdl-card__title-giselle {
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UJ4JRH9FS-5252c4345ac9-512') center / cover;
 }
-.contact-page {
-  display: flex;
-  background: url('../images/activity-background.jpg') center / cover;
+.mdl-layout__header-row .mdl-navigation__link {
+  color: #C14953;
 }
-.contact-page form {
-  font-weight: 700;
+.mdl-layout__header .logo-header-img {
+  height: 70px;
 }
-.contact-page .form-container {
-  display: flex;
-  margin: 50px auto;
+@media (max-width: 800px) {
+  .mdl-layout__header .logo-header-img {
+    margin-left: 35%;
+  }
 }
-.contact-page .form-container .message-input {
-  display: block;
-  margin: 0 auto;
+.mdl-layout__header a {
+  font-family: "Courgette", cursive;
 }
