@@ -11,24 +11,31 @@ $(document).ready(() => {
     let firstName = $('#name').val();
     let email = $('#email').val();
     let message = $('#message').val();
-    console.log(firstName, email, message);
-    $.ajax('https://bucket-list-be.herokuapp.com/api/contacts').then((data, error) => {
-      console.log(data, 'data');
-      console.log(error, 'error');
+
+    let data = JSON.stringify({
+      firstname: firstName,
+      lastname: 'test',
+      email: email
     });
-    // $.ajax('https://bucket-list-be.herokuapp.com/api/contacts/47/messages', {
-    //   method: 'POST',
-    //   data: {
-    //     contact_id: 47,
-    //     message: 'test message'
-    //   },
-    //   error: (error) => {
-    //     console.log(error, 'error');
-    //   },
-    //   success: (obj) => {
-    //     console.log(obj);
-    //   }
-    // })
+
+    $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
+      method: 'POST',
+      contentType:"application/json; charset=utf-8",
+      dataType:"json",
+      data: data
+    }).then((res) => {
+      // $.ajax(`https://bucket-list-be.herokuapp.com/api/${res.id}/messages`, {
+      //   method: 'POST',
+      //   contentType:"application/json; charset=utf-8",
+      //   dataType:"json",
+      //   data: JSON.stringify({
+      //     contact_id: res.id,
+      //     message: message
+      //   })
+      // }).then((res) => {
+      //   console.log('sent message to server', res);
+      // })
+    })
   });
 
 
