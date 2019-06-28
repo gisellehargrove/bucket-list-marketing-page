@@ -2,8 +2,11 @@ $(document).ready(() => {
 
   // Scroll button
   $('#scroll').click(() => {
-    $('html, body').animate({
-      scrollTop: "100px"})
+    console.log(window);
+    // $('#features')[0].scrollIntoView(false);
+    TweenLite.to(window, 1, {
+      scrollTo: '#features'
+    });
   });
 
   $('.send-button').click((e) => {
