@@ -2,11 +2,7 @@ $(document).ready(() => {
 
   // Scroll button
   $('#scroll').click(() => {
-    console.log(window);
-    // $('#features')[0].scrollIntoView(false);
-    TweenLite.to(window, 1, {
-      scrollTo: '#features'
-    });
+    $('.card-4')[0].scrollIntoView(false);
   });
 
   $('.send-button').click((e) => {
@@ -21,26 +17,43 @@ $(document).ready(() => {
       email: email
     });
 
+    let dummy = JSON.stringify({
+      email: 'test@test.com',
+      password: 'test'
+    });
+
     $('#name').val('');
     $('#email').val('');
     $('#message').val('');
+
     $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
       method: 'POST',
-      contentType:"application/json; charset=utf-8",
-      dataType:"json",
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
       data: data
     }).then((res) => {
-      // $.ajax(`https://bucket-list-be.herokuapp.com/api/${res.id}/messages`, {
-      //   method: 'POST',
-      //   contentType:"application/json; charset=utf-8",
-      //   dataType:"json",
-      //   data: JSON.stringify({
-      //     contact_id: res.id,
-      //     message: message
-      //   })
-      // }).then((res) => {
-      //   console.log('sent message to server', res);
-      // })
+      $.ajax('https://bucket-list-be.herokuapp.com/api/login', {
+        method: 'POST',
+        contentType: "application/json; charset=utf-8",
+        dataType: 'json',
+        data: dummy
+      }).then((res) => {
+        console.log(res, 'login creds');
+        $('.sent-message-container').css({
+          opacity: 1
+        })
+        // $.ajax(`https://bucket-list-be.herokuapp.com/api/${res.id}/messages`, {
+        //   method: 'POST',
+        //   contentType:"application/json; charset=utf-8",
+        //   dataType:"json",
+        //   data: JSON.stringify({
+        //     contact_id: res.id,
+        //     message: message
+        //   })
+        // }).then((res) => {
+        //   console.log('sent message to server', res);
+        // })
+      })
     })
   });
 
