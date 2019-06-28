@@ -19,14 +19,13 @@
     height: 70px;
 
     @media @mobile {
-      margin: 35px 0 0 35%;
+      margin: 35px 45% 0 45%;
     }
   }
 
   .mdl-layout__drawer-button {
-    @media @mobile {
       margin: 20px 4px;
-    }
+      left: 20px;
   }
 
   a {
@@ -35,13 +34,20 @@
 }
 
 .mdl-layout__drawer {
-  @media @mobile {
-    width: 245px;
-  }
+  width: 350px;
+  transform: translateX(-350px);
 }
 
 .mdl-layout-title {
   font-family: "Courgette", cursive;
   color: @material-red;
-  font-size: 30px;
+  font-size: 50px;
+  margin: 50px 0 0 28px;
+
+}
+
+.mdl-navigation__link {
+  padding: 40px !important;
+  font-size: 20px;
+  font-weight: 600;
 }

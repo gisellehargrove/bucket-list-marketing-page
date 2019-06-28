@@ -42,17 +42,16 @@ $(document).ready(() => {
         $('.sent-message-container').css({
           opacity: 1
         })
-        // $.ajax(`https://bucket-list-be.herokuapp.com/api/${res.id}/messages`, {
-        //   method: 'POST',
-        //   contentType:"application/json; charset=utf-8",
-        //   dataType:"json",
-        //   data: JSON.stringify({
-        //     contact_id: res.id,
-        //     message: message
-        //   })
-        // }).then((res) => {
-        //   console.log('sent message to server', res);
-        // })
+      //   $.ajax(`https://bucket-list-be.herokuapp.com/api/${res.id}/messages`, {
+      //     method: 'POST',
+      //     contentType:"application/json; charset=utf-8",
+      //     dataType:"json",
+      //     data: JSON.stringify({
+      //       message: message
+      //     })
+      //   }).then((res) => {
+      //     console.log('sent message to server', res);
+      //   })
       })
     })
   });
