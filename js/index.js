@@ -18,6 +18,9 @@ $(document).ready(() => {
       email: email
     });
 
+    $('#name').val('');
+    $('#email').val('');
+    $('#message').val('');
     $.ajax('https://bucket-list-be.herokuapp.com/api/contacts', {
       method: 'POST',
       contentType:"application/json; charset=utf-8",
