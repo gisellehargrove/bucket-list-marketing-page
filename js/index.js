@@ -3,9 +3,7 @@ $(document).ready(() => {
   // Scroll button
   $('#scroll').click(() => {
     $('html, body').animate({
-      scrollTop: $('#log-in-button').scrollTop()
-    }, 100);
-    return false;
+      scrollTop: "100px"})
   });
 
   $('.send-button').click((e) => {

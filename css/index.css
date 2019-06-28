@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .page-content {
   height: 100%;
 }
@@ -52,8 +55,6 @@
 .page-content .features-container .mdl-card .mdl-card__title {
   height: 175px;
 }
-@media (max-width: 800px) {
-}
 .page-content .features-container .card-1 .mdl-card__title {
   background: url('../images/adventure-clouds.jpg') center / cover;
 }
@@ -92,6 +93,11 @@
 }
 .page-content .login-button-container .mdl-button {
   margin: 20px 45%;
+}
+@media (max-width: 800px) {
+  .page-content .login-button-container .mdl-button {
+    margin: 20px 35%;
+  }
 }
 @keyframes shake {
   10%,

@@ -1,4 +1,9 @@
 // Home page styles
+
+html {
+  scroll-behavior: smooth;
+}
+
 .page-content {
   height: 100%;
 
@@ -61,10 +66,6 @@
 
       .mdl-card__title {
         height: 175px;
-      }
-
-      @media @mobile {
-        // display: none;
       }
     }
 
@@ -131,12 +132,15 @@
   }
 
   .login-button-container {
-    // display: flex;
     height: 100px;
     width: 100%;
 
     .mdl-button {
       margin: 20px 45%;
+
+      @media @mobile {
+        margin: 20px 35%;
+      }
     }
   }
 }
