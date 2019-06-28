@@ -143,10 +143,10 @@ html {
 .contact-page .send-button {
   margin: 0 auto;
 }
-.about-the-team {
+.about-us-page {
   background: url('../images/about-team.jpg') center / cover;
 }
-.mission-statement-container {
+.about-us-page .mission-statement-container {
   font-family: "Courgette", cursive;
   height: 200px;
   width: 100%;
@@ -155,12 +155,12 @@ html {
   margin-bottom: 35px;
 }
 @media (max-width: 800px) {
-  .mission-statement-container {
+  .about-us-page .mission-statement-container {
     height: 100px;
     margin-bottom: 60px;
   }
 }
-.mission-statement-container .mission-statement {
+.about-us-page .mission-statement-container .mission-statement {
   margin: 0 auto;
   padding: 50px;
   font-size: 1.5rem;
@@ -168,42 +168,42 @@ html {
   color: #C14953;
 }
 @media (max-width: 800px) {
-  .mission-statement-container .mission-statement {
+  .about-us-page .mission-statement-container .mission-statement {
     font-size: 0.8rem;
     line-height: 20px;
   }
 }
-.about-us-container {
+.about-us-page .about-us-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 10px;
 }
-.about-us-container .mdl-card {
+.about-us-page .about-us-container .mdl-card {
   margin: 15px;
   width: 320px;
   height: 500px;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
 }
-.about-us-container .mdl-card .mdl-card__title-kelli {
+.about-us-page .about-us-container .mdl-card .mdl-card__title-kelli {
   color: #fff;
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UDQFCBAJ3-ef737bf29932-512') center / cover;
 }
-.about-us-container .mdl-card .mdl-card__title-ricardo {
+.about-us-page .about-us-container .mdl-card .mdl-card__title-ricardo {
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UJYULR9C5-aaba271d7a30-512') center / cover;
 }
-.about-us-container .mdl-card .mdl-card__title-chris {
+.about-us-page .about-us-container .mdl-card .mdl-card__title-chris {
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UFVUEC918-1fdf146ec13a-512') center / cover;
 }
-.about-us-container .mdl-card .mdl-card__title-miguel {
+.about-us-page .about-us-container .mdl-card .mdl-card__title-miguel {
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UJ4L81Y69-55d9838442c8-512') center / cover;
 }
-.about-us-container .mdl-card .mdl-card__title-tyler {
+.about-us-page .about-us-container .mdl-card .mdl-card__title-tyler {
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UG05X4P9R-5fba4cc95dcc-512') center / cover;
 }
-.about-us-container .mdl-card .mdl-card__title-giselle {
+.about-us-page .about-us-container .mdl-card .mdl-card__title-giselle {
   background: url('https://ca.slack-edge.com/T4JUEB3ME-UJ4JRH9FS-5252c4345ac9-512') center / cover;
 }
 .mdl-layout__header-row .mdl-navigation__link {
