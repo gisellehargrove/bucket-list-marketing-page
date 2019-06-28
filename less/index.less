@@ -10,15 +10,38 @@
 }
 
 .mdl-layout__header {
+
+  @media @mobile {
+    height: 100px;
+  }
+
   .logo-header-img {
     height: 70px;
 
     @media @mobile {
-      margin-left: 35%;
+      margin: 35px 0 0 35%;
+    }
+  }
+
+  .mdl-layout__drawer-button {
+    @media @mobile {
+      margin: 20px 4px;
     }
   }
 
   a {
     font-family: "Courgette", cursive;
   }
+}
+
+.mdl-layout__drawer {
+  @media @mobile {
+    width: 245px;
+  }
+}
+
+.mdl-layout-title {
+  font-family: "Courgette", cursive;
+  color: @material-red;
+  font-size: 30px;
 }

@@ -227,14 +227,34 @@ html {
 .mdl-layout__header-row .mdl-navigation__link {
   color: #C14953;
 }
+@media (max-width: 800px) {
+  .mdl-layout__header {
+    height: 100px;
+  }
+}
 .mdl-layout__header .logo-header-img {
   height: 70px;
 }
 @media (max-width: 800px) {
   .mdl-layout__header .logo-header-img {
-    margin-left: 35%;
+    margin: 35px 0 0 35%;
+  }
+}
+@media (max-width: 800px) {
+  .mdl-layout__header .mdl-layout__drawer-button {
+    margin: 20px 4px;
   }
 }
 .mdl-layout__header a {
   font-family: "Courgette", cursive;
+}
+@media (max-width: 800px) {
+  .mdl-layout__drawer {
+    width: 245px;
+  }
+}
+.mdl-layout-title {
+  font-family: "Courgette", cursive;
+  color: #C14953;
+  font-size: 30px;
 }
